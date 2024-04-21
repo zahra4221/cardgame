@@ -1,0 +1,70 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-image: url("../../../../assets/images/fond-connexion.webp");
+  background-size: contain;
+  background-position: center;
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+
+}
+
+.main-form {
+  width: 100%;
+  max-width: 500px;
+  background-image: url("../../../../assets/images/fond_login.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  background-color: transparent;
+  margin: 60px auto;
+  padding: 50px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  color: black;
+  font-size: 28px;
+  text-align: center;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.mat-form-field {
+  width: 90%;
+  margin-top: 10px;
+}
+
+button[mat-flat-button] {
+  display: block;
+  margin: 20px auto 0;
+}
+
+
+.success-message {
+  font-size: 20px;
+  color: rgb(246, 27, 202); 
+  text-align: center;
+  padding: 30px; 
+  border: 3px solid rgb(246, 27, 202); 
+  border-radius: 10px; 
+  width: 50%; 
+  max-width: 600px;
+  margin-top: 15%; 
+}
+
+.mat-card-actions {
+    justify-content: center;  
+    padding: 20px;
+  }
+
+  mat-card-title{
+    padding-bottom: 5%;
+  }
+
+  

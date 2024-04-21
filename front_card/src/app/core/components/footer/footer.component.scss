@@ -1,0 +1,31 @@
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding-bottom: 70px; 
+    padding-top: 40px;
+
+  }
+
+  
+  footer nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+   
+  }
+  
+  footer a:hover {
+    color: #B9F5FB;
+  }
+  
+  .active {
+    color: #B9F5FB;
+  }
+  

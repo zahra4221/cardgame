@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "amatiasq.sort-imports",
+        "msjsdiag.debugger-for-chrome",
+        "firefox-devtools.vscode-firefox-debug"
+    ]
+}

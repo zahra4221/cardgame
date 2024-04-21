@@ -1,0 +1,13 @@
+<header>
+  <div class="header-content">
+    <img src="assets/images/logo.webp" alt="Logo" class="logo">
+    <nav>
+      <a *ngIf="!(authService.isLoggedIn$ | async)" routerLink="" class="accueil" >ACCUEIL</a> 
+      <a routerLink="rule-page" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">REGLE DU JEU</a>
+      <a *ngIf="!(authService.isLoggedIn$ | async)" routerLink="/inscription-form" routerLinkActive="active">INSCRIPTION</a>
+      <a *ngIf="!(authService.isLoggedIn$ | async)" routerLink="/connexion-form" routerLinkActive="active">CONNEXION</a>
+      <a *ngIf="authService.isLoggedIn$ | async" routerLink="game-page" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">GAME</a>
+      <a *ngIf="authService.isLoggedIn$ | async" (click)="authService.logout()" routerLink="" class="deconnexion">DÉCONNEXION</a>
+    </nav>
+  </div>
+</header>

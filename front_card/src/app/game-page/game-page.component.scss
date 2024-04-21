@@ -1,0 +1,37 @@
+.home-page {
+    background-image: url("../../assets/images/fond-image.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    background-repeat: no-repeat;
+  }
+  
+  .content {
+    color: white;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    background-color: black;
+    padding: 1%;
+    margin-top: 20%;
+    font-family: 'Nosifer', sans-serif;
+
+  }
+  
+  button {
+    background-color: white;
+    color: black;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    font-family: 'Jockey One', sans-serif; 
+    margin-top: 15%;
+  }
+  

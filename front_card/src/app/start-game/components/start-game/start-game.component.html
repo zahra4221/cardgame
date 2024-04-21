@@ -1,0 +1,43 @@
+<div class="home-page">
+  <div class="cards-container">
+    <h1 id="titre-gestion">GESTION DES CARTES</h1>
+    <p id="card_detail">Appuyer sur les cartes pour obtenir plus de détail, les modifier ou les supprimer.</p>
+    <div class="content">
+      <div *ngFor="let card of cards" class="card">
+        <input type="checkbox" id="flip{{card.id}}" class="flip-checkbox" hidden>
+        <label for="flip{{card.id}}" class="card-inner">
+          <div class="card-front">
+          </div>
+          <div class="card-back">
+            <p class="card-name">{{ card.name }}</p>
+            <p class="card-value">{{ card.value }}</p>
+            <button (click)="deleteCard(card.id)" class="delete-button">Supprimer</button>
+          </div>
+        </label>
+      </div>
+    </div>
+    <div class="add-card-form">
+<button class="open-modal-btn" (click)="showModal = true">Ajouter une nouvelle carte</button>
+
+<!-- Modal -->
+<div class="modal" [style.display]="showModal ? 'block' : 'none'">
+  <div class="modal-content">
+    <span class="close-btn" (click)="showModal = false">&times;</span>
+    <form (submit)="addCard(); showModal = false" novalidate>
+      <div class="form-group">
+        <label for="name">Nom de la carte:</label>
+        <input type="text" id="name" [(ngModel)]="newCard.name" name="name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="value">Valeur de la carte:</label>
+        <input type="number" id="value" [(ngModel)]="newCard.value" name="value" required>
+      </div>
+      
+      <button type="submit" class="submit-btn">Ajouter la carte</button>
+    </form>
+  </div>
+</div>
+
+  </div>
+</div>

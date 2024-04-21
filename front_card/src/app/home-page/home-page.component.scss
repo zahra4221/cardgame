@@ -1,0 +1,35 @@
+.home-page {
+    background-image: url("../../assets/images/home_background.webp");
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    background-repeat: no-repeat;
+  }
+  
+  .content {
+    color: white;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-top: 25%;
+    font-family: 'Nosifer', sans-serif;
+
+  }
+  
+  button {
+    background-color: white;
+    color: black;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-family: 'Jockey One', sans-serif; 
+    margin-top: 10%;
+  }
+  

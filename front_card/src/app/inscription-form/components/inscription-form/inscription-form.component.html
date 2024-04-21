@@ -1,0 +1,33 @@
+<div class="form-container">
+    <mat-card [formGroup]="mainForm" class="main-form" *ngIf="!isSubmitted; else successContent">
+      <mat-card-title>Inscription</mat-card-title>
+      <mat-card class="form-card">
+        <mat-form-field appearance="fill">
+          <mat-label>Nom complet</mat-label>
+          <input type="text" matInput formControlName="name">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Nom d'utilisateur</mat-label>
+          <input type="text" matInput formControlName="login">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Mot de passe</mat-label>
+          <input type="password" matInput formControlName="password">
+        </mat-form-field>
+      </mat-card>
+      <mat-card-actions>
+        <button mat-flat-button color="primary" [disabled]="!mainForm.valid" (click)="onSubmitForm()">ENREGISTRER</button>
+      </mat-card-actions>
+    </mat-card>
+  
+    <ng-template #successContent>
+      <mat-card class="success-message">
+        <mat-card-title>Inscription réussie!</mat-card-title>
+        <mat-card-content>
+          <p>L'utilisateur a bien été créé !</p>
+          <p><a routerLink="/connexion-form">Cliquez ici</a> pour aller à la page de connexion.</p>
+        </mat-card-content>
+      </mat-card>
+    </ng-template>
+  </div>
+  
